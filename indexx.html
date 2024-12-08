@@ -32,6 +32,21 @@
         transform: translateY(-50%);
         text-align: center;
  }
+ .btt1{
+    height:35px;
+    width: 115px;
+    background-color: white;
+    color: black;
+    border-radius: 0px;
+ }
+ .btt2{
+    height:35px;
+    width: 115px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif ;}
  .ok{
     background-color: white;
     margin-top: 50px;
@@ -115,10 +130,14 @@
 .inp1{
     height:30px;
     width: 200px;
+    border-color: rgba(239, 240, 236, 0.403);
+
 }
 .inp2{
     height:150px;
     width: 410px;
+    border-color: rgba(239, 240, 236, 0.403);
+
 }
 .footer{
     background-color: black;
@@ -126,6 +145,7 @@
     margin-top: 50px;
     width: 100%;
     display: flex;
+    
     
 }
 .footer h1{
@@ -139,7 +159,7 @@
 @media screen and (min-width:0px) and (max-width:768px){
     .ok img{
         height:100px;
-        width:130px;
+        width:150px;
 
     }
     .ok h1{
@@ -169,10 +189,68 @@
     .butt{
         margin-top: 15px;
     }
+    .bgk{
+        height: 30vh;
+        background-position:center ;
+        background-size: cover;
+    }
+    .content{
+        width:100%;
+        position: absolute;
+        top: 16%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+    .butt .btt1{
+        height:25px;
+        width:90px;
+        font-size: 10px;
+        
+    }
+    .butt .btt2{
+        height:25px;
+        width:90px;
+        font-size: 10px;
+        
+    }
+    .touch h1{
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    .touch p{
+        font-size: 12px;
+    }
+    .inp1{
+        height: 25px;
+        width:150px;
+        border-color: rgba(239, 240, 236, 0.403);
+    }
+    .inp2{
+        height:150px;
+        width:310px;
+        border-color: rgba(239, 240, 236, 0.403);
 
+    }
+    .footer{
+        gap:30px;
+        height:20vh;
+    }
+    .footer h1{
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+    .footer p{
+        font-size: 12px;
+        width:150px;
+       
+    }
     
     
 }
+.op{
+    margin-top: 30px;
+}
+
     </style>
 </head>
 <body>
@@ -182,8 +260,8 @@
         <h1>HELLO WE ARE COMILA</h1>
         <p>WE ARE ALMOST READY TO LAUNCH OUR NEW CREATIVE WEBSITE!</p>
         <div class="butt">
-        <button class="btt1">LETS BEGIN</button>
-        <button class="btt2">NOTIFY ME</button>
+        <button class="btt2">LETS BEGIN</button>
+        <button class="btt1">NOTIFY ME</button>
         </div>
         </div>
 
@@ -220,7 +298,7 @@
         <div class="touch">
             <h1>GET IN TOUCH</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum possimus deleniti assumenda quidem. Nulla mollitia blanditiis</p>
-            <div style="margin-top: 50px;">
+            <div class="op">
                 <input class="inp1" type="text" placeholder="Your Name">
                 <input type="text" class="inp1" name="" id="" placeholder="Your Email"><br><br>
                 <input  type="text" class="inp2" placeholder="Message">
@@ -230,7 +308,7 @@
         <div class="footer">
             <div style="margin-left:30px ;">
             <h1>COMILA</h1>
-            <p style="width: 250px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto excepturi facilis atque fuga quis hic deleniti officia incidunt pariatur harum. Obcaecati fugiat quae saepe quos, fugit in sit molestiae dicta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto excepturi facilis atque fuga quis hic deleniti officia incidunt pariatur harum. Obcaecati fugiat quae saepe quos, fugit in sit molestiae dicta.</p>
 
             </div>
             <div>

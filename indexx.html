@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            width:auto;
+            }
         .bgk{
             background-image: url(./assets/images/slide-1.jpg);
             background-position: center;
@@ -23,15 +26,15 @@
             font-size: 12px;
         }
         .content{
-   width:100%;
-   position: absolute;
-   top: 25%;
-   transform: translateY(-50%);
-   text-align: center;
+        width:100%;
+        position: absolute;
+        top: 25%;
+        transform: translateY(-50%);
+        text-align: center;
  }
  .ok{
     background-color: white;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom:20px ;
     width:100%;
     display: flex;
@@ -58,21 +61,118 @@
     width:200px
   }
   .yel{
-    background-color: yellow;
-    height:45vh;
+    background-color: rgb(217, 187, 33);
+    /* display: flex;
+    justify-content: center;
+    gap:20px;
+    padding: 10px;
+    width: 100%; */
+    
+  }
+  .yelres{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap:20px;
+    padding: 10px;
+    width: 100%;
   }
   .yel h1{
     font-size: 20px;
   }
   .res{
-    border:2px solid;
     height: 150px;
     width:250px;
     margin-top: 30px;
+    margin-bottom: ;
+    
   }
+  .res h1{
+    color: white;
+    font-size: 16px;
+  }
+  .yel button{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .but{
 
+    display: flex;
+    justify-content: center;
+    
+  }
+  .touch{
+    text-align: center;
+    margin-top: 80px;
+  }
+  .touch button{
+    margin-top: 20px;
+    background-color: black;
+    color: aliceblue;
+    height: 30px;
+    width:150px;
+    cursor: pointer;
+  }
+.inp1{
+    height:30px;
+    width: 200px;
+}
+.inp2{
+    height:150px;
+    width: 410px;
+}
+.footer{
+    background-color: black;
+    padding-top: 20px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    
+}
+.footer h1{
+    color: white;
+    font-size: 18px;
+
+}
+.footer p{
+    color: white;
+}
+@media screen and (min-width:0px) and (max-width:768px){
+    .ok img{
+        height:100px;
+        width:130px;
+
+    }
+    .ok h1{
+        font-size: 18px;
+
+    }
+    .ok p{
+        font-size: 8px;
+        width:170px
+    }
+    .res h1{
+        font-size: 15px;
+    }
+    .res p{
+        font-size: 12px;
+        
+    }
+    .yel{
+        /* padding:10px; */
+    }
+    .bgk h1{
+        font-size: 12px;
+    }
+    .bgk p{
+        font-size: 8px;
+    }
+    .butt{
+        margin-top: 15px;
+    }
+
+    
+    
+}
     </style>
 </head>
 <body>
@@ -81,8 +181,10 @@
         <div class="content">
         <h1>HELLO WE ARE COMILA</h1>
         <p>WE ARE ALMOST READY TO LAUNCH OUR NEW CREATIVE WEBSITE!</p>
-        <button>LETS BEGIN</button>
-        <button>NOTIFY ME</button>
+        <div class="butt">
+        <button class="btt1">LETS BEGIN</button>
+        <button class="btt2">NOTIFY ME</button>
+        </div>
         </div>
 
     </div>
@@ -95,13 +197,48 @@
     </div>
     </div>
     <div class="yel">
+        <div class="yelres">
         <div class="res">
             <h1>RESPONSIVE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi sapiente id </p>
         </div>
-        <div class="res"></div>
-        <div class="res"></div>
+        <div class="res">
+            <h1>BOOTSTRAP</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi sapiente id </p>
+        </div>
+        <div class="res">
+            <h1>SUPPORT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi sapiente id </p>
+        </div>
+        </div>
+        <div class="but">
+        <button>TALK TO US</button>
+        </div>
+
 
     </div>
+        <div class="touch">
+            <h1>GET IN TOUCH</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum possimus deleniti assumenda quidem. Nulla mollitia blanditiis</p>
+            <div style="margin-top: 50px;">
+                <input class="inp1" type="text" placeholder="Your Name">
+                <input type="text" class="inp1" name="" id="" placeholder="Your Email"><br><br>
+                <input  type="text" class="inp2" placeholder="Message">
+            </div>
+            <button>SEND MESSAGE</button>
+        </div>
+        <div class="footer">
+            <div style="margin-left:30px ;">
+            <h1>COMILA</h1>
+            <p style="width: 250px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto excepturi facilis atque fuga quis hic deleniti officia incidunt pariatur harum. Obcaecati fugiat quae saepe quos, fugit in sit molestiae dicta.</p>
+
+            </div>
+            <div>
+                <h1>OUR SUPPORT</h1>
+            </div>
+        </div>
+
+
     </div>
 </body>
 </html>

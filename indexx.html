@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         body {
-    width: auto;
+        body, html {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-         }
+    overflow-x: hidden;
+}
         .bgk{
             background-image: url(./assets/images/slide-1.jpg);
             background-position: center;
@@ -70,14 +69,12 @@
     display: inline;
     width:150px;
  } */
-  .p1{
-    width:200px;
+  .p1,.p2{
+    width:350px;
 
 
   }
-  .p2{
-    width:200px;
-  }
+  
   .yel{
     background-color: rgb(217, 187, 33);
     /* display: flex;
@@ -264,6 +261,16 @@
     
     
 }
+/* @media screen and(min-width:769px) and (max-width:2000px) {
+    .footer{
+        display: flex;
+        justify-content: center;
+        gap:50px;
+        align-items: center;
+        width:100%;
+    }
+    
+} */
 .op{
     margin-top: 30px;
 }

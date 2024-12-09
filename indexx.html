@@ -3,53 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
     <title>Document</title>
-    <style>
-        body, html {
+<style>
+    .div1 {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: ;
 }
-        .bgk{
-            background-image: url(./assets/images/slide-1.jpg);
-            background-position: center;
-            background-size: cover;
-            height: 45vh;
-            width:100% ;
-        }
-        .bgk h1{
-            color:white;
-            font-size: 20px;
-            font-family: sans-serif;
+.bgk{
+    background-image: url(./assets/images/slide-1.jpg);
+    background-position: center;
+    background-size: cover;
+cursor:default;
+    height: 45vh;
+    width:100% ;
+}
+.bgk h1{
+    color:white;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
 
-        }
-        .bgk p{
-            color:white;
-            font-size: 12px;
-        }
-        .content{
-        width:100%;
-        position: absolute;
-        top: 25%;
-        transform: translateY(-50%);
-        text-align: center;
- }
- .btt1{
-    height:35px;
-    width: 115px;
-    background-color: white;
-    color: black;
-    border-radius: 0px;
- }
- .btt2{
+.bgk p{
+    color:white;
+    font-size: 1rem;
+}
+.content{
+    /* width:100%; */
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    gap: 100px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.btt1{
+   height:35px;
+   width: 115px;
+   background-color: white;
+   color: black;
+   border-radius: 0px;
+}
+.btt2{
     height:35px;
     width: 115px;
     background-color: transparent;
     color: white;
     border-color: white;
     font-size: 12px;
-    font-family:Arial, Helvetica, sans-serif ;}
- .ok{
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.ok{
     background-color: white;
     margin-top: 50px;
     margin-bottom:20px ;
@@ -65,16 +70,14 @@
  .ok h1{
     font-size: 20px;
  }
- /* .ok p{
+  /* .ok p{
     display: inline;
     width:150px;
  } */
-  .p1,.p2{
+ .p1,.p2{
     width:350px;
-
-
   }
-  
+
   .yel{
     background-color: rgb(217, 187, 33);
     /* display: flex;
@@ -98,7 +101,6 @@
     height: 150px;
     width:250px;
     margin-top: 30px;
-    
     
   }
   .res h1{
@@ -135,7 +137,7 @@
     width:150px;
     cursor: pointer;
   }
-.inp1{
+  .inp1{
     height:30px;
     width: 200px;
     border-color: rgba(239, 240, 236, 0.403);
@@ -153,7 +155,8 @@
     margin-top: 50px;
     width: 100%;
     display: flex;
-    height: 30vh;
+    justify-content: flex-start;
+    gap: 50px;
     
     
 }
@@ -166,123 +169,184 @@
     color: white;
     width:250px;
 }
-@media screen and (min-width:0px) and (max-width:768px){
-    .ok img{
-        height:100px;
-        width:150px;
-
-    }
-    .ok h1{
-        font-size: 18px;
-
-    }
-    .ok p{
-        font-size: 8px;
-        width:170px
-    }
-    .res h1{
-        font-size: 15px;
-    }
-    .res p{
-        font-size: 12px;
-        
-    }
-    
-    .bgk h1{
-        font-size: 12px;
-    }
-    .bgk p{
-        font-size: 8px;
-    }
-    .butt{
-        margin-top: 15px;
-    }
-    .bgk{
-        height: 30vh;
-        background-position:center ;
-        background-size: cover;
-    }
-    .content{
-        width:100%;
-        position: absolute;
-        top: 16%;
-        transform: translateY(-50%);
-        text-align: center;
-    }
-    .butt .btt1{
-        height:25px;
-        width:90px;
-        font-size: 10px;
-        
-    }
-    .butt .btt2{
-        height:25px;
-        width:90px;
-        font-size: 10px;
-        
-    }
-    .but button{
-        height:25px;
-        width:90px;
-        font-size: 10px;
-        
-    }
-    .touch h1{
-        font-size: 20px;
-        font-family: sans-serif;
-    }
-    .touch p{
-        font-size: 12px;
-    }
-    .inp1{
-        height: 25px;
-        width:150px;
-        border-color: rgba(239, 240, 236, 0.403);
-    }
-    .inp2{
-        height:150px;
-        width:310px;
-        border-color: rgba(239, 240, 236, 0.403);
-
-    }
-    .footer{
-        gap:30px;
-        height:30vh;
-    }
-    .footer h1{
-        font-size: 15px;
-        font-family: sans-serif;
-    }
-    .footer p{
-        font-size: 12px;
-        width:150px;
-       
-    }
-    
-    
-}
-/* @media screen and(min-width:769px) and (max-width:2000px) {
-    .footer{
-        display: flex;
-        justify-content: center;
-        gap:50px;
-        align-items: center;
-        width:100%;
-    }
-    
-} */
 .op{
     margin-top: 30px;
 }
+@media (max-width: 425px) {
 
-    </style>
+   
+  .content{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    gap: 100px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.bgk h1{
+  font-size: 1rem;
+}
+
+.bgk p{
+  font-size: 0.5rem;
+}
+.btt1{
+  height:25px;
+  width: 80px;
+  font-size: 0.5rem;
+}
+.btt2{
+  height:25px;
+  width: 80px;
+  font-size: 0.5rem;
+}
+.ok img{
+  height:150px;
+}
+.ok h1{
+  font-size: 1rem;
+}
+.p1,.p2{
+  width:300px;
+  font-size: 0.9rem;
+}
+.yelres{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  width: 100%;
+}
+.yel h1{
+  font-size: 1.5rem;
+}
+.res{
+  width:100%; 
+}
+.touch > h1{
+  font-size: 1.5rem;
+}
+.footer{
+  background-color: black;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+.f2{
+  padding-left: 40px;
+}
+}
+
+
+@media  (min-width: 425px) and (max-width: 768px) {
+  .content{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    gap: 100px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.bgk h1{
+  font-size: 1.5rem;
+}
+.bgk p{
+  font-size: 0.7rem;
+}
+.btt1{
+  height:30px;
+  width: 100px;
+  font-size: 0.7rem;
+}
+.btt2{
+  height:30px;
+  width: 100px;
+  font-size: 0.7rem;
+}
+.yelres{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  width: 100%;
+}
+.yel h1{
+  font-size: 1.5rem;
+}
+.res{
+  width:100%; 
+}
+.touch > h1{
+  font-size: 1.8rem;
+}
+}
+
+@media  (min-width: 769px)  and (max-width:1024px){
+
+    .content{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    gap: 100px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.footer{
+  background-color: black;
+  width: 100%;
+  padding-left:50px ;
+}
+.f2{
+  padding-left: 40px;
+}
+}
+@media  (min-width: 1025px) and (max-width:1260px)  {
+
+  .content{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    gap: 100px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.footer{
+background-color: black;
+width: 100%;
+padding-left:150px ;
+}
+.f2{
+padding-left: 40px;
+}
+}
+
+@media  (min-width: 1261px)  {
+
+  .content{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    gap: 100px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.footer{
+background-color: black;
+width: 100%;
+padding-left:250px ;
+}
+.f2{
+padding-left: 40px;
+}
+}
+</style>
+
+
 </head>
+
+
 <body>
-    <div>
+    <div class="div1">
     <div class="bgk">
         <div class="content">
-        <h1>HELLO WE ARE COMILA</h1>
-        <p>WE ARE ALMOST READY TO LAUNCH OUR NEW CREATIVE WEBSITE!</p>
+        <h1 style="word-spacing: 10px;">HELLO, WE ARE COMILA</h1>
+        <p style="letter-spacing: 5px;">WE ARE ALMOST <SPAn style="color: yellow;">READY TO LAUNCH </SPAn>OUR <span style="color: yellow;">NEW CREATIVE</span> WEBSITE!</p>
         <div class="butt">
         <button class="btt2">LETS BEGIN</button>
         <button class="btt1">NOTIFY ME</button>
@@ -303,6 +367,7 @@
         <div class="res">
             <h1>RESPONSIVE</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi sapiente id </p>
+
         </div>
         <div class="res">
             <h1>BOOTSTRAP</h1>
@@ -324,6 +389,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum possimus deleniti assumenda quidem. Nulla mollitia blanditiis</p>
             <div class="op">
                 <input class="inp1" type="text" placeholder="Your Name">
+                <br><br>
                 <input type="text" class="inp1" name="" id="" placeholder="Your Email"><br><br>
                 <input  type="text" class="inp2" placeholder="Message">
             </div>
@@ -335,7 +401,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto excepturi facilis atque.<br> <br>copyright @ 2016 your company designed by templotemo</p>
 
             </div>
-            <div>
+            <div class="f2">
                 <h1>OUR SUPPORT</h1>
                 <p>120-204 alquam tuargo convilla lapsuatoo 10200 san francisco, CA, USA</p>
                 <p style="display: flex; gap:20px">

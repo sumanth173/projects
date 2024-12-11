@@ -11,11 +11,14 @@
     padding: 0;
     overflow-x: hidden;
 }
+*{font-family: Arial, Helvetica, sans-serif;
+
+}
 .bgk{
     background-image: url(./assets/images/slide-1.jpg);
     background-position: center;
     background-size: cover;
-cursor:default;
+    cursor:default;
     height: 45vh;
     width:100% ;
 }
@@ -70,16 +73,17 @@ cursor:default;
  .ok h1{
     font-size: 20px;
  }
-  /* .ok p{
-    display: inline;
-    width:150px;
- } */
+  .ok p{
+    font-size: 15px;
+    
+ }
  .p1,.p2{
     width:350px;
   }
 
   .yel{
     background-color: rgb(217, 187, 33);
+
     /* display: flex;
     justify-content: center;
     gap:20px;
@@ -123,7 +127,13 @@ cursor:default;
     border-color: white;
     height:35px;
     width: 115px;
+    font-size: 12px;
     
+  }
+  .but button:hover{
+    background-color: white;
+    color: black;
+    font-size: 12px;
   }
   .touch{
     text-align: center;
@@ -139,13 +149,13 @@ cursor:default;
   }
   .inp1{
     height:30px;
-    width: 200px;
+    width: 250px;
     border-color: rgba(239, 240, 236, 0.403);
 
 }
 .inp2{
     height:150px;
-    width: 410px;
+    width: 510px;
     border-color: rgba(239, 240, 236, 0.403);
 
 }
@@ -172,12 +182,17 @@ cursor:default;
 .op{
     margin-top: 30px;
 }
+.btt1:hover{
+  background-color: rgb(239, 195, 18);
+}
+.btt2:hover{
+  background-color: rgb(239, 195, 18);;
+}
 @media (max-width: 425px) {
 
    
   .content{
     position: absolute;
-    
     top: 20%;
     left: 0%;
     gap: 100px;
@@ -234,6 +249,9 @@ cursor:default;
 .f2{
   padding-left: 40px;
 }
+.inp2{
+  width:250px;
+}
 }
 
 
@@ -275,6 +293,12 @@ cursor:default;
 }
 .touch > h1{
   font-size: 1.8rem;
+}
+.inp1{
+  width:400px;
+}
+.inp2{
+  width: 400px;
 }
 }
 
@@ -366,17 +390,37 @@ padding-left: 40px;
     <div class="yel">
         <div class="yelres">
         <div class="res">
-            <h1>RESPONSIVE</h1>
+          <div style="display: flex; gap: 10px;">
+          <div>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 42 32" enable-background="new 0 0 42 32" xml:space="preserve" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="#ffffff" d="M3.5,26C3.776,26,4,25.776,4,25.5V2c0-0.598,0.402-1,1-1h32c0.57,0,1,0.468,1,1.089V25.5 c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5V2.089C39,0.917,38.122,0,37,0H5C3.841,0,3,0.841,3,2v23.5C3,25.776,3.224,26,3.5,26z "></path> <path fill="#ffffff" d="M6.5,3C6.224,3,6,3.224,6,3.5v22C6,25.776,6.224,26,6.5,26h29c0.276,0,0.5-0.224,0.5-0.5v-22 C36,3.224,35.776,3,35.5,3H6.5z M35,25H7V4h28V25z"></path> <path fill="#ffffff" d="M41.5,28h-41C0.224,28,0,28.224,0,28.5v1.175C0,30.873,1.408,32,2.5,32h37c1.145,0,2.5-1.355,2.5-2.5v-1 C42,28.224,41.776,28,41.5,28z M41,29.5c0,0.589-0.911,1.5-1.5,1.5h-37C1.869,31,1,30.232,1,29.675V29h40V29.5z"></path> </g> </g></svg>
+          </div>
+          <div>
+          <h1>RESPONSIVE</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi sapiente id </p>
-
+            </div>
+            </div>
         </div>
         <div class="res">
-            <h1>BOOTSTRAP</h1>
+          <div style="display: flex; gap: 10px;">
+          <div>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 42 32" enable-background="new 0 0 42 32" xml:space="preserve" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="#ffffff" d="M3.5,26C3.776,26,4,25.776,4,25.5V2c0-0.598,0.402-1,1-1h32c0.57,0,1,0.468,1,1.089V25.5 c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5V2.089C39,0.917,38.122,0,37,0H5C3.841,0,3,0.841,3,2v23.5C3,25.776,3.224,26,3.5,26z "></path> <path fill="#ffffff" d="M6.5,3C6.224,3,6,3.224,6,3.5v22C6,25.776,6.224,26,6.5,26h29c0.276,0,0.5-0.224,0.5-0.5v-22 C36,3.224,35.776,3,35.5,3H6.5z M35,25H7V4h28V25z"></path> <path fill="#ffffff" d="M41.5,28h-41C0.224,28,0,28.224,0,28.5v1.175C0,30.873,1.408,32,2.5,32h37c1.145,0,2.5-1.355,2.5-2.5v-1 C42,28.224,41.776,28,41.5,28z M41,29.5c0,0.589-0.911,1.5-1.5,1.5h-37C1.869,31,1,30.232,1,29.675V29h40V29.5z"></path> </g> </g></svg>
+          </div>
+          <div>
+          <h1>BOOTSTRAP</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi sapiente id </p>
+            </div>
+            </div>
         </div>
         <div class="res">
-            <h1>SUPPORT</h1>
+          <div style="display: flex; gap: 10px;">
+          <div>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 42 32" enable-background="new 0 0 42 32" xml:space="preserve" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="#ffffff" d="M3.5,26C3.776,26,4,25.776,4,25.5V2c0-0.598,0.402-1,1-1h32c0.57,0,1,0.468,1,1.089V25.5 c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5V2.089C39,0.917,38.122,0,37,0H5C3.841,0,3,0.841,3,2v23.5C3,25.776,3.224,26,3.5,26z "></path> <path fill="#ffffff" d="M6.5,3C6.224,3,6,3.224,6,3.5v22C6,25.776,6.224,26,6.5,26h29c0.276,0,0.5-0.224,0.5-0.5v-22 C36,3.224,35.776,3,35.5,3H6.5z M35,25H7V4h28V25z"></path> <path fill="#ffffff" d="M41.5,28h-41C0.224,28,0,28.224,0,28.5v1.175C0,30.873,1.408,32,2.5,32h37c1.145,0,2.5-1.355,2.5-2.5v-1 C42,28.224,41.776,28,41.5,28z M41,29.5c0,0.589-0.911,1.5-1.5,1.5h-37C1.869,31,1,30.232,1,29.675V29h40V29.5z"></path> </g> </g></svg>
+          </div>
+          <div>
+          <h1>SUPPORT</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi sapiente id </p>
+            </div>
+            </div>
         </div>
         </div>
         <div class="but">
@@ -390,7 +434,7 @@ padding-left: 40px;
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum possimus deleniti assumenda quidem. Nulla mollitia blanditiis</p>
             <div class="op">
                 <input class="inp1" type="text" placeholder="Your Name">
-                <br><br>
+                
                 <input type="text" class="inp1" name="" id="" placeholder="Your Email"><br><br>
                 <input  type="text" class="inp2" placeholder="Message">
             </div>
